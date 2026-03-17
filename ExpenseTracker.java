@@ -6,12 +6,26 @@ public class ExpenseTracker {
     private static final String FILE_NAME = "expenses.txt";
     private static ArrayList<Expense> expenses = new ArrayList<>();
 
+    
+   public static void printWelcomeLogo() {
+        System.out.println("   ___________");
+        System.out.println("  |  _______  |");
+        System.out.println("  | |   $   | |   PERSONAL");
+        System.out.println("  | |_______| |   EXPENSE");
+        System.out.println("  |  _______  |   TRACKER");
+        System.out.println("  | |       | |");
+        System.out.println("  | |_______| |   v1.0");
+        System.out.println("  |___________|");
+        System.out.println("===============================\n");
+    }
+
     public static void main(String[] args) {
         loadExpenses(); // Load existing data when the program starts
         Scanner sc = new Scanner(System.in);
         boolean running = true;
 
-        System.out.println("=== Welcome to the Expense Tracker ===");
+        // --- 2. WE CALL THE LOGO RIGHT HERE BEFORE THE LOOP STARTS ---
+        printWelcomeLogo();
 
         while (running) {
             System.out.println("\n1. Add an Expense");
