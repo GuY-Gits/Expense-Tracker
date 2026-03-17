@@ -7,16 +7,18 @@ public class ExpenseTracker {
     private static ArrayList<Expense> expenses = new ArrayList<>();
 
     
-   public static void printWelcomeLogo() {
-        System.out.println("   ___________");
-        System.out.println("  |  _______  |");
-        System.out.println("  | |   $   | |   PERSONAL");
-        System.out.println("  | |_______| |   EXPENSE");
-        System.out.println("  |  _______  |   TRACKER");
-        System.out.println("  | |       | |");
-        System.out.println("  | |_______| |   v1.0");
-        System.out.println("  |___________|");
-        System.out.println("===============================\n");
+    public static void printWelcomeLogo() {
+        System.out.println("  ______                                 _______             _             ");
+        System.out.println(" |  ____|                               |__   __|           | |            ");
+        System.out.println(" | |__  __  ___ __   ___ _ __  ___  ___    | | _ __ __ _  ___| | _____ _ __ ");
+        System.out.println(" |  __| \\ \\/ / '_ \\ / _ \\ '_ \\/ __|/ _ \\   | || '__/ _` |/ __| |/ / _ \\ '__|");
+        System.out.println(" | |____ >  <| |_) |  __/ | | \\__ \\  __/   | || | | (_| | (__|   <  __/ |   ");
+        System.out.println(" |______/_/\\_\\ .__/ \\___|_| |_|___/\\___|   |_||_|  \\__,_|\\___|_|\\_\\___|_|   ");
+        System.out.println("             | |                                                            ");
+        System.out.println("             |_|                                                            ");
+        System.out.println("===========================================================================");
+        System.out.println("                 Welcome to your Personal Ledger                          ");
+        System.out.println("===========================================================================\n");
     }
 
     public static void main(String[] args) {
